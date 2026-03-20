@@ -1,0 +1,42 @@
+{
+  "name": "aibc-claudecode-plugins",
+  "owner": {
+    "name": "Kai Wang",
+    "email": "hqmank@gmail.com",
+    "url": "https://aibuilderclub.com"
+  },
+  "plugins": [
+    {
+      "name": "kiro-sdd",
+      "source": "./",
+      "description": "Spec driven development workflow",
+      "category": "workflows",
+      "strict": false,
+      "commands": [
+        "./kiro-sdd/commands/kc/split-task.md",
+        "./kiro-sdd/commands/kc/impl.md",
+        "./kiro-sdd/commands/kc/bug-fix.md",
+        "./kiro-sdd/commands/kc/pr-list.md",
+        "./kiro-sdd/commands/new-feature.md"
+      ],
+      "agents": [
+        "./kiro-sdd/agents/kiro-requirement.md",
+        "./kiro-sdd/agents/kiro-design.md",
+        "./kiro-sdd/agents/kiro-plan.md",
+        "./kiro-sdd/agents/kiro-excecutor.md",
+        "./kiro-sdd/agents/code-reviewer.md"
+      ]
+    },
+    {
+      "name": "next-vercel",
+      "source": "./",
+      "description": "nextjs vercel workflow",
+      "category": "workflows",
+      "strict": false,
+      "agents": [
+        "./ui/agents/shadcn-ui-expert.md",
+        "./ui/agents/vercel-ai-sdk-v5-expert.md"
+      ]
+    }
+  ]
+}
